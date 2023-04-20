@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    let age = prompt("Ilan taon kana boi?");
+    
+    if (age >= 25) {
+      alert("Tanda mo na par!");
+      } else {
+        alert("Bata mo pa par.");
+      }
+  
+    let num = prompt("Enter ka 1 to 100");
+    if (num < 100) {
+      alert("Mababa sa 100 nilagay mo.");
+      } else {
+      alert("Lagpas 100 nilagay mo eh!");
+      }
+  
+  </script>
+</head>
+<body>
+  <div class="hero">
+
+    <div class="numContainer">
+      <h4>Numbers 0-30</h4>
+    <div id="output"></div>
+    <script>
+      let output = document.getElementById("output");
+        for (let i = 0; i <= 30; i++) {
+          output.innerHTML += i + "<br>";
+      }
+    </script>
+    </div>
+
+    <div class="numContainer">
+      <h4>Even Numbers 0-40</h4>
+    <div id="output1"></div>
+    <script>
+      let output1 = document.getElementById("output1");
+        for (let i = 0; i <= 40; i += 2) {
+          output1.innerHTML += i + "<br>";
+      }
+    </script>
+    </div>
+
+    <div class="numContainer">
+      <h4>Multiples of 3 from 40 to 10</h4>
+    <div id="output2"></div>
+    <script>
+      let output2 = document.getElementById("output2");
+       for (let i = 40; i >= 10; i--) {
+          if (i % 3 === 0) {
+            output2.innerHTML += i + "<br>";
+          }
+        }
+    </script>
+    </div>
+
+  </div>
+</body>
+</html>
